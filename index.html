@@ -257,16 +257,16 @@
         </div>
     </div>
 <script>
-    function kopirajTelefon() {
-        var brojTelefona = document.getElementById("broj-telefona").innerText;
-        var dummyInput = document.createElement("input");
-        document.body.appendChild(dummyInput);
-        dummyInput.setAttribute("value", brojTelefona);
-        dummyInput.select();
-        document.execCommand("copy");
-        document.body.removeChild(dummyInput);
-        alert("Broj telefona je kopiran!");
-    }
+   function kopirajTelefon() {
+            var brojTelefona = document.getElementById("broj-telefona").innerText;
+            var dummyInput = document.createElement("input");
+            document.body.appendChild(dummyInput);
+            dummyInput.setAttribute("value", brojTelefona);
+            dummyInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummyInput);
+            alert("Broj telefona je kopiran!")
+        }
 </script>
 </body>
 </html>
